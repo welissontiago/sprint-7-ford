@@ -1,7 +1,52 @@
-.content {
-  padding: 1rem;
-}
-.img img {
+.img-container img {
   max-width: 100%;
-  height: auto;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.main-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+::ng-deep mat-toolbar[_ngcontent-ng-c3217250455] {
+  position: relative !important;
+}
+
+.btn {
+  display: flex;
+  justify-content: end;
+}
+
+.welcome-bg {
+  border: 1px solid black;
+  background: rgb(232, 243, 245);
+  opacity: 0.8;
+  box-sizing: border-box;
+  padding: 25px;
+  height: 400px;
+  width: 400px;
+  border-radius: 5px;
+  position: absolute;
+}
+
+.welcome-bg h1 {
+  font-size: 1rem;
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: black;
+}
+
+.welcome-content p {
+  margin-top: 20px;
+  color: rgb(51, 51, 243);
+  font-weight: 700;
 }

@@ -1,8 +1,18 @@
-<app-menu> </app-menu>
-<div class="content">
-  <h1>Bem-vindo ao site da Ford</h1>
-  <div class="img">
-    <img src="/img/ranger.png" alt="ranger img" />
+<app-menu class="flex-container">
+  <div class="btn">
+    <button class="button" mat-raised-button color="warn" (click)="logout()">
+      Sair
+    </button>
   </div>
-  <button mat-raised-button color="warn" (click)="logout()">Sair</button>
-</div>
+
+  <div class="img-container">
+    <img src="/img/ranger.png" alt="ranger img" />
+    <div class="welcome-bg">
+      <div class="welcome-content">
+        <h1>Sistema de Dados da FORD</h1>
+        <div class="line"></div>
+        <p>Seja Bem-vindo(a)!</p>
+      </div>
+    </div>
+  </div>
+</app-menu>
