@@ -3,25 +3,24 @@
     <button
       class="navbar-toggler"
       type="button"
-      data-bs-toggle="offcanvas"
-      data-bs-target="#offcanvasNavbar"
-      aria-controls="offcanvasNavbar"
+      (click)="toggleMenu()"
       aria-label="Toggle navigation"
     >
       <span class="navbar-toggler-icon"></span>
     </button>
     <div
       class="offcanvas offcanvas-start"
+      [ngClass]="{ open: isMenuOpen }"
       tabindex="-1"
       id="offcanvasNavbar"
       aria-labelledby="offcanvasNavbarLabel"
     >
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
         <button
           type="button"
           class="btn-close"
-          data-bs-dismiss="offcanvas"
+          (click)="toggleMenu()"
           aria-label="Close"
         ></button>
       </div>
