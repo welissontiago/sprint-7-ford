@@ -1,0 +1,52 @@
+.grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+forms {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  max-width: 200px;
+  margin-top: -400px;
+}
+
+.ranger {
+  max-width: 800px;
+}
+
+.logo-bg h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  color: lightseagreen;
+}
+
+.enter {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1200px) {
+  .ranger {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 830px) {
+  .grid {
+    flex-direction: column;
+  }
+  .logo {
+    margin-top: -600px;
+  }
+}
