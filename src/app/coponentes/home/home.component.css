@@ -1,5 +1,7 @@
-.img {
-  margin-top: 10%;
-  display: flex;
-  justify-content: center;
+.content {
+  padding: 1rem;
+}
+.img img {
+  max-width: 100%;
+  height: auto;
 }

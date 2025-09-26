@@ -1,21 +1,29 @@
-// src/app/coponentes/menu/menu.component.ts
-
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
 import { RouterLink } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-menu',
   standalone: true,
-  imports: [CommonModule, FormsModule, RouterLink],
+  imports: [
+    CommonModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatListModule,
+    RouterLink,
+  ],
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.css'],
 })
 export class MenuComponent {
-  isMenuOpen = false;
+  opened = false;
 
-  toggleMenu(): void {
-    this.isMenuOpen = !this.isMenuOpen;
+  toggleSidenav(sidenav: any) {
+    sidenav.toggle();
   }
 }
